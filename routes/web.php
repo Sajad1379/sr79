@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $articles=DB::table('articles')->where('id',1)->update(['title'=>'articles 3']);
-    dd($articles);
     return view('welcome');
 });
 
@@ -30,3 +28,6 @@ Route::get('/', function () {
         return $a;
     });
 });*/
+Route::get('/ss',function(){
+    return("salam");
+});
